@@ -1,0 +1,15 @@
+<h1>Todos los post</h1>
+
+{{#each posts}}
+<a href="#!">{{this.title}}</a>
+<br>
+{{else}}
+<h2>Ni hay nada cabrón!!</h2>
+{{/each}}
+
+{{#if user}}
+{{!-- <a href="/posts/new">Agrega un post</a> --}}
+
+<a href="/posts/new"><button>Agrega un post</button></a>
+
+{{/if}}
